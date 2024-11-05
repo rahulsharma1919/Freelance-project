@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Dodong Consultancy Services</title>
 </head>
@@ -51,6 +51,26 @@
     
     <section id="services">
         <h2>Our Services</h2>
+        <div class="pricing">
+            <div class="card" style="width: 30rem;">
+                <img src="assets/web-development.jpg" class="card-img-top" alt="web development">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <center><a href="#" class="btn btn-primary">Learn More</a></center>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <div class="image">
+                    <img src="assets/app development.jpg" class="card-img-top" alt="app development">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">App Development</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <center><a href="#" class="btn btn-primary">Learn More</a></center>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- -------------------&&&&&&&&&&&&&&&&--------------- -->
@@ -130,22 +150,55 @@
           </p>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section id="contact">
-        <h2>Get in Touch</h2>
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Let's get in touch</h2>
+            <p>We're open for any suggestion or just to have a chat</p>
+            <div class="info-item">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <p>Address: <br>198 West 21th Street, Suite 721 New York NY 10016</p>
+            </div>
+            <div class="info-item">
+                <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                <p>Phone: <br>+91-XXX-XXX-XXXX</p>
+            </div>
+            <div class="info-item">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <p>Email: <br>contact@dodongconsultancyservices.com</p>
+            </div>
+            <div class="info-item">
+                <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                <p>Website: <br>dodongconsultancyservices.com</p>
+            </div>
+        </div>
+        <div class="contact-form-wrapper">
+            <h2>Get in touch</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="send-button">Send Message</button>
+            </form>
+        </div>
+    </div>
     </section>
+    
     <section id="cta"></section>
 
 

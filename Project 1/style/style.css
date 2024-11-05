@@ -26,7 +26,6 @@ h2{
 }
 
 section{
-    border: solid 2px red;
     padding: 18px 21px;
 }
 
@@ -114,13 +113,14 @@ section{
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
     margin-bottom: 15px;
 }
 
 .icon {
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 24px;
+    min-width: 30px; /* Ensure icons are aligned */
 }
 
 .contact-form-wrapper {

@@ -2,40 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IBM Hero Section</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400&display=swap"
-        rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="navbar container-fluid">
-        <!-- Logo -->
-        <div class="navbar-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" width="40">
-        </div>
+    <div class="container-fluid d-flex justify-content-center my-3">
+        <div class="navbar d-flex align-items-center px-3">
+            <!-- Logo -->
+            <div class="navbar-logo me-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" width="40" />
+            </div>
 
-        <!-- Navbar Menu -->
-        <div class="navbar-menu">
-            <a href="#" class="dropdown">Products</a>
-            <a href="#" class="dropdown">Solutions</a>
-            <a href="#" class="no-dropdown">Consulting</a>
-            <a href="#" class="dropdown">Support</a>
-            <a href="#" class="no-dropdown">Think</a>
-        </div>
+            <!-- Navbar Menu -->
+            <div class="navbar-menu d-flex justify-content-center flex-grow-1">
+                <a href="#" class="nav-link">Products</a>
+                <a href="#" class="nav-link">Solutions</a>
+                <a href="#" class="nav-link">Consulting</a>
+                <a href="#" class="nav-link">Support</a>
+                <a href="#" class="nav-link">Think</a>
+            </div>
 
-        <!-- Right Side Icons -->
-        <div class="navbar-icons">
-            <i class="fa fa-search"></i> <!-- Search icon -->
-            <i class="fa fa-comments"></i> <!-- Comments icon -->
-            <i class="fa fa-user"></i> <!-- User icon -->
+            <!-- CTA Icons -->
+            <div class="ms-auto">
+                <a href="#" class="btn btn-primary get-in-touch-btn">Get in Touch</a>
+            </div>
         </div>
     </div>
 
@@ -46,24 +46,34 @@
             <div class="col-lg-5 col-md-12 d-flex align-items-center">
                 <div class="hero-content">
                     <h1>Big Blue 30</h1>
-                    <p>Unlock savings this November with a 30% discount on selected IBM subscriptions</p>
+                    <p>
+                        Unlock savings this November with a 30% discount on selected IBM
+                        subscriptions
+                    </p>
                     <a href="#" class="btn">View offers →</a>
                 </div>
             </div>
 
             <!-- Center image - moves below the text on mobile screens -->
             <div class="hero-image col-lg-5 col-md-12 order-lg-2 order-md-3 order-3 mt-4 mt-lg-0">
-                <img src="https://via.placeholder.com/400x300.png?text=30%25" alt="30% Discount">
+                <img src="https://via.placeholder.com/400x300.png?text=30%25" alt="30% Discount" />
             </div>
 
             <!-- Right side news section -->
             <div class="latest-news col-lg-2 col-md-12 order-lg-3 order-md-2 order-2">
                 <h3>Latest news</h3>
                 <ul>
-                    <li><a href="#">IBM Advances Secure AI, Quantum Safe Technology with...</a> →</li>
-                    <hr>
-                    <li><a href="#">Star Union Dai-ichi Life Collaborates with QuantumStreet A...</a> →</li>
-                    <hr>
+                    <li>
+                        <a href="#">IBM Advances Secure AI, Quantum Safe Technology with...</a>
+                        →
+                    </li>
+                    <hr />
+                    <li>
+                        <a href="#">Star Union Dai-ichi Life Collaborates with QuantumStreet
+                            A...</a>
+                        →
+                    </li>
+                    <hr />
                 </ul>
                 <div class="pagination">
                     <a href="#">1</a>
@@ -81,10 +91,13 @@
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card h-100 p-3">
-                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM Granite 3.0">
+                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM Granite 3.0" />
                     <div class="card-body p-0">
                         <h5 class="card-title">IBM Granite 3.0</h5>
-                        <p class="card-text">AI language models for code generation, translation and documentation</p>
+                        <p class="card-text">
+                            AI language models for code generation, translation and
+                            documentation
+                        </p>
                     </div>
                     <div class="card-footer p-0">
                         <a href="#" class="arrow-link">→</a>
@@ -93,11 +106,13 @@
             </div>
             <div class="col">
                 <div class="card h-100 p-3">
-                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM SPSS Statistics">
+                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM SPSS Statistics" />
                     <div class="card-body p-0">
                         <h5 class="card-title">IBM SPSS Statistics</h5>
-                        <p class="card-text">Get a 30% discount on the first month or year of your IBM SPSS Statistics
-                            subscription</p>
+                        <p class="card-text">
+                            Get a 30% discount on the first month or year of your IBM SPSS
+                            Statistics subscription
+                        </p>
                     </div>
                     <div class="card-footer p-0">
                         <a href="#" class="arrow-link">→</a>
@@ -106,11 +121,13 @@
             </div>
             <div class="col">
                 <div class="card h-100 p-3">
-                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM Video Streaming">
+                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM Video Streaming" />
                     <div class="card-body p-0">
                         <h5 class="card-title">IBM Video Streaming</h5>
-                        <p class="card-text">Virtual events and video streaming platform; try it free and unlock a 30%
-                            discount</p>
+                        <p class="card-text">
+                            Virtual events and video streaming platform; try it free and
+                            unlock a 30% discount
+                        </p>
                     </div>
                     <div class="card-footer p-0">
                         <a href="#" class="arrow-link">→</a>
@@ -119,10 +136,13 @@
             </div>
             <div class="col">
                 <div class="card h-100 p-3">
-                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM Aspera">
+                    <img src="https://via.placeholder.com/150" class="card-img-top mb-3" alt="IBM Aspera" />
                     <div class="card-body p-0">
                         <h5 class="card-title">IBM Aspera</h5>
-                        <p class="card-text">Get a 30% discount on the first year of your IBM Aspera subscription</p>
+                        <p class="card-text">
+                            Get a 30% discount on the first year of your IBM Aspera
+                            subscription
+                        </p>
                     </div>
                     <div class="card-footer p-0">
                         <a href="#" class="arrow-link">→</a>
@@ -130,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr />
     </div>
     <!-- Pricing -->
     <div class="container my-5">
@@ -140,14 +160,24 @@
             <div class="col-lg-6 mb-4">
                 <h2 class="section-subtitle">For developers</h2>
                 <p class="section-description">
-                    Grow your skills and create something new with our AI tools and foundation models.
-                    Then connect, collaborate and innovate with your peers.
+                    Grow your skills and create something new with our AI tools and
+                    foundation models. Then connect, collaborate and innovate with your
+                    peers.
                 </p>
                 <ul class="link-list">
-                    <li><a href="#">Start building with IBM Granite 3.0 models →</a></li>
-                    <li><a href="#">Explore AI courses, APIs, data sets and more →</a></li>
-                    <li><a href="#">Accelerate software development with watsonx Code Assistant →</a></li>
-                    <li><a href="#">Check out the watsonx.ai Developer Toolkit →</a></li>
+                    <li>
+                        <a href="#">Start building with IBM Granite 3.0 models →</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore AI courses, APIs, data sets and more →</a>
+                    </li>
+                    <li>
+                        <a href="#">Accelerate software development with watsonx Code Assistant
+                            →</a>
+                    </li>
+                    <li>
+                        <a href="#">Check out the watsonx.ai Developer Toolkit →</a>
+                    </li>
                 </ul>
             </div>
 
@@ -155,26 +185,34 @@
             <div class="col-lg-6 mb-4">
                 <h2 class="section-subtitle">For business leaders</h2>
                 <p class="section-description">
-                    Transform business and drive growth with AI tools, technology and insights that help
-                    you stay competitive—and responsibly map your organization’s future.
+                    Transform business and drive growth with AI tools, technology and
+                    insights that help you stay competitive—and responsibly map your
+                    organization’s future.
                 </p>
                 <ul class="link-list">
                     <li><a href="#">Read the CEO's guide to generative AI →</a></li>
-                    <li><a href="#">Explore an AI curriculum designed for business leaders →</a></li>
-                    <li><a href="#">Deploy an AI agent for HR with watsonx Orchestrate →</a></li>
-                    <li><a href="#">Protect your data with IBM Guardium Data Security Center →</a></li>
+                    <li>
+                        <a href="#">Explore an AI curriculum designed for business leaders →</a>
+                    </li>
+                    <li>
+                        <a href="#">Deploy an AI agent for HR with watsonx Orchestrate →</a>
+                    </li>
+                    <li>
+                        <a href="#">Protect your data with IBM Guardium Data Security Center →</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <hr>
+        <hr />
     </div>
     <!-- success stories -->
     <div class="container my-5">
         <!-- Main Title -->
         <h1 class="success">Take the next step</h1>
-        <p class="main-description">
-            Solving the world’s problems through technology wouldn’t be possible without people with the right skills.
-            See what it takes to become an IBMer, or build your skills with our educational courses.
+        <p class="success-description">
+            Solving the world’s problems through technology wouldn’t be possible
+            without people with the right skills. See what it takes to become an
+            IBMer, or build your skills with our educational courses.
         </p>
 
         <!-- Card Section -->
@@ -182,7 +220,7 @@
             <!-- First Card -->
             <div class="col-lg-6">
                 <div class="card h-100 shadow-sm d-flex flex-row align-items-center p-3">
-                    <img src="https://via.placeholder.com/150" class="card-img-left me-3" alt="IBM India Careers">
+                    <img src="https://via.placeholder.com/150" class="card-img-left me-3" alt="IBM India Careers" />
                     <div class="card-body p-0">
                         <h5 class="card-subtitle">IBM India Careers</h5>
                         <h3 class="card-title">Become an IBMer</h3>
@@ -194,7 +232,7 @@
             <!-- Second Card -->
             <div class="col-lg-6">
                 <div class="card h-100 shadow-sm d-flex flex-row align-items-center p-3">
-                    <img src="https://via.placeholder.com/150" class="card-img-left me-3" alt="IBM SkillsBuild">
+                    <img src="https://via.placeholder.com/150" class="card-img-left me-3" alt="IBM SkillsBuild" />
                     <div class="card-body p-0">
                         <h5 class="card-subtitle">IBM SkillsBuild</h5>
                         <h3 class="card-title">Explore learning opportunities</h3>
@@ -203,103 +241,207 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr />
     </div>
-    <!-- choose us -->
+    <!-- Choose Us Section -->
     <div class="container my-5">
         <!-- Main Title and Description -->
-        <h1 class="choose-us text-center">Technology & Consulting</h1>
-        <p class="choose-us-description text-center">
-            From <a href="#">next-generation AI</a> to cutting edge <a href="#">hybrid cloud solutions</a> to the deep
-            expertise of <a href="#">IBM Consulting</a>, IBM has what it takes to help you reinvent how your business
-            works in the age of AI.
+        <h1 class="choose-us">Technology & Consulting</h1>
+        <p class="success-description">
+            From <a href="#">next-generation AI</a> to cutting edge
+            <a href="#">hybrid cloud solutions</a> to the deep expertise of
+            <a href="#">IBM Consulting</a>, IBM has what it takes to help you
+            reinvent how your business works in the age of AI.
         </p>
 
-        <!-- Centered Card Grid Section with no gaps between columns -->
-        <div class="row row-cols-1 row-cols-md-3 g-0 justify-content-center">
+        <!-- Centered Card Grid Section with gaps between columns -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <!-- Card Template - Each card is a col-md-4 for responsiveness -->
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
-                        <h5 class="card-title">AI solutions</h5>
-                        <div class="overlay">
-                            <p class="overlay-text">Support data-driven decisions for your business</p>
-                            <a href="#" class="arrow-link">→</a>
+            <div class="col" style="margin-bottom: 30px">
+                <div class="choose-us-card h-100 shadow-sm">
+                    <div class="choose-us-card-body text-center">
+                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon" />
+                        <h5 class="choose-us-card-title">AI solutions</h5>
+                        <div class="choose-us-overlay">
+                            <p class="choose-us-overlay-text">
+                                Support data-driven decisions for your business
+                            </p>
+                            <a href="#" class="choose-us-arrow-link">→</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
-                        <h5 class="card-title">AI models</h5>
-                        <div class="overlay">
-                            <p class="overlay-text">Support data-driven decisions for your business</p>
-                            <a href="#" class="arrow-link">→</a>
+            <div class="col" style="margin-bottom: 30px">
+                <div class="choose-us-card h-100 shadow-sm">
+                    <div class="choose-us-card-body text-center">
+                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon" />
+                        <h5 class="choose-us-card-title">AI models</h5>
+                        <div class="choose-us-overlay">
+                            <p class="choose-us-overlay-text">
+                                Support data-driven decisions for your business
+                            </p>
+                            <a href="#" class="choose-us-arrow-link">→</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
-                        <h5 class="card-title">Consulting</h5>
-                        <div class="overlay">
-                            <p class="overlay-text">Support data-driven decisions for your business</p>
-                            <a href="#" class="arrow-link">→</a>
+            <div class="col" style="margin-bottom: 30px">
+                <div class="choose-us-card h-100 shadow-sm">
+                    <div class="choose-us-card-body text-center">
+                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon" />
+                        <h5 class="choose-us-card-title">Consulting</h5>
+                        <div class="choose-us-overlay">
+                            <p class="choose-us-overlay-text">
+                                Support data-driven decisions for your business
+                            </p>
+                            <a href="#" class="choose-us-arrow-link">→</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
-                        <h5 class="card-title">IT automation</h5>
-                        <div class="overlay">
-                            <p class="overlay-text">Support data-driven decisions for your business</p>
-                            <a href="#" class="arrow-link">→</a>
+            <div class="col" style="margin-bottom: 30px">
+                <div class="choose-us-card h-100 shadow-sm">
+                    <div class="choose-us-card-body text-center">
+                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon" />
+                        <h5 class="choose-us-choose-us-card-title">IT automation</h5>
+                        <div class="choose-us-overlay">
+                            <p class="choose-us-overlay-text">
+                                Support data-driven decisions for your business
+                            </p>
+                            <a href="#" class="choose-us-arrow-link">→</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
-                        <h5 class="card-title">Compute & servers</h5>
-                        <div class="overlay">
-                            <p class="overlay-text">Support data-driven decisions for your business</p>
-                            <a href="#" class="arrow-link">→</a>
+            <div class="col" style="margin-bottom: 30px">
+                <div class="choose-us-card h-100 shadow-sm">
+                    <div class="choose-us-card-body text-center">
+                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon" />
+                        <h5 class="choose-us-card-title">Compute & servers</h5>
+                        <div class="choose-us-overlay">
+                            <p class="choose-us-overlay-text">
+                                Support data-driven decisions for your business
+                            </p>
+                            <a href="#" class="choose-us-arrow-link">→</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
-                        <h5 class="card-title">Security & identity</h5>
-                        <div class="overlay">
-                            <p class="overlay-text">Support data-driven decisions for your business</p>
-                            <a href="#" class="arrow-link">→</a>
+            <div class="col" style="margin-bottom: 30px">
+                <div class="choose-us-card h-100 shadow-sm">
+                    <div class="choose-us-card-body text-center">
+                        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon" />
+                        <h5 class="choose-us-card-title">Security & identity</h5>
+                        <div class="choose-us-overlay">
+                            <p class="choose-us-overlay-text">
+                                Support data-driven decisions for your business
+                            </p>
+                            <a href="#" class="choose-us-arrow-link">→</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <hr />
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5">
+        <div class="contact-container rounded shadow-sm p-5">
+            <div class="row g-4 align-items-center">
+                <!-- Contact Information on the Left -->
+                <div class="col-md-6">
+                    <h2 class="contact-info-title">Get in Touch</h2>
+                    <p class="contact-info-description">
+                        We’re here to help you navigate the world of AI and technology. Reach out to us with your
+                        questions!
+                    </p>
+                    <ul class="contact-details list-unstyled mt-4">
+                        <li><strong>Address:</strong> 123 Tech Street, City, Country</li>
+                        <li><strong>Email:</strong> contact@company.com</li>
+                        <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form on the Right -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="row">
+                            <!-- First Name and Last Name -->
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    placeholder="Enter your first name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Email and Phone -->
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                        </div>
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"
+                                required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn submit-btn w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Newsletter Subscription Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
+                    <!-- Close button with X icon -->
+                    <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Stay updated with the latest insights on AI, technology, and business solutions. Subscribe now!
+                    </p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="subscriberEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="subscriberEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <button type="submit" class="btn subscribe-btn w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

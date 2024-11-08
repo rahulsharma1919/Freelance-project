@@ -15,44 +15,62 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <div class="container-fluid d-flex justify-content-center my-3">
-        <div class="navbar d-flex align-items-center px-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm ">
+        <div class="container-fluid">
             <!-- Logo -->
-            <div class="navbar-logo me-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" width="40" />
-            </div>
+            <a class="navbar-brand fw-bold" href="#"><img src="assets/logo.png" alt="logo"></a>
+            <!-- Navbar Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <!-- Navbar Menu -->
-            <div class="navbar-menu d-flex justify-content-center flex-grow-1">
-                <a href="#" class="nav-link">Products</a>
-                <a href="#" class="nav-link">Solutions</a>
-                <a href="#" class="nav-link">Consulting</a>
-                <a href="#" class="nav-link">Support</a>
-                <a href="#" class="nav-link">Think</a>
-            </div>
+            <!-- Centered nav links and right actions -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Centered nav links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Contact</a>
+                    </li>
+                </ul>
 
-            <!-- CTA Icons -->
-            <div class="ms-auto">
-                <a href="#" class="btn btn-primary get-in-touch-btn">Get in Touch</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- hero section -->
-    <div class="hero-section container-fluid">
-        <div class="row justify-content-between">
-            <!-- Left content (Big Blue 30 and text) -->
-            <div class="col-lg-5 col-md-12 d-flex align-items-center">
-                <div class="hero-content">
-                    <h1>Big Blue 30</h1>
-                    <p>
-                        Unlock savings this November with a 30% discount on selected IBM
-                        subscriptions
-                    </p>
-                    <a href="#" class="btn">View offers →</a>
+                <!-- Right side actions -->
+                <div class="d-flex align-items-center">
+                    <!-- Sign In button, hidden on smaller screens -->
+                    <a href="#" class="btn-signin ms-2 d-none d-lg-inline">Get in Touch</a>
                 </div>
             </div>
+        </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <div class="hero-section container my-5">
+        <div class="row justify-content-between">
+            <!-- Left content (Big Blue 30 and text) -->
+            <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                <div class="hero-content">
+                    <h1>Transform Your Business with <span>Innovative Web & App </span> Solutions</h1>
+                    <p>
+                        Discover how Dodong Consultancy Services can elevate your digital
+                        presence with top-notch website and app development for the US and Canada.
+                    </p>
+                    <a href="#" class="btn">Get Free Consultation →</a>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
 
             <!-- Center image - moves below the text on mobile screens -->
             <div class="hero-image col-lg-5 col-md-12 order-lg-2 order-md-3 order-3 mt-4 mt-lg-0">
@@ -60,7 +78,7 @@
             </div>
 
             <!-- Right side news section -->
-            <div class="latest-news col-lg-2 col-md-12 order-lg-3 order-md-2 order-2">
+            <!-- <div class="latest-news col-lg-2 col-md-12 order-lg-3 order-md-2 order-2">
                 <h3>Latest news</h3>
                 <ul>
                     <li>
@@ -81,7 +99,7 @@
                     <a href="#">3</a>
                     <a href="#">4</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -423,7 +441,7 @@
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="https://via.placeholder.com/40" alt="Logo" class="modal-logo mb-3" />
+                    <img src="assets/logo.png" alt="Logo" class="modal-logo" />
                     <h5 class="modal-title mb-2">Welcome to DCS</h5>
                     <p class="modal-subtext mb-3">
                         Please enjoy 10% off your order when you join our email list.
@@ -443,7 +461,8 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
 </body>

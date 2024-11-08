@@ -9,74 +9,73 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar container */
-/* Capsule Navbar Styling */
+/* Capsule shape and custom styling for the navbar */
 .navbar {
-    background-color: #ffffff;
     border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    width: 100%;
-    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 100px;
 }
 
-/* Logo */
-.navbar-logo img {
-    max-height: 40px;
+/* Logo styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
 }
 
-/* Centered Navbar Menu */
-.navbar-menu {
-    display: flex;
-    gap: 20px;
+.navbar-brand img {
+    height: 30px;
 }
 
+/* Centered nav links styling */
 .nav-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    padding: 5px 10px;
+    color: #6c757d;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #0056b3;
+    color: #000;
 }
 
-/* CTA Styling */
-.get-in-touch-btn {
-    padding: 8px 15px;
-    font-size: 16px;
+/* Right action buttons styling */
+.btn-icon {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.btn-signin {
+    background-color: #ccd6ff;
+    color: #294fe9;
+    border-radius: 50px;
+    padding: 10px 25px;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #0072ff;
-    border-radius: 20px;
     transition: background-color 0.3s ease;
-    text-decoration: none;
 }
 
-.get-in-touch-btn:hover {
-    background-color: #0056b3;
+
+
+.btn-signin:hover {
+    background-color: #e0d4ff;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+    /* Hide right side icons and Sign In button on medium and smaller screens */
+    .btn-signin,
+    .btn-icon {
+        display: none;
+    }
+
+    /* Align nav links to center when collapsed */
+    .navbar-nav {
         text-align: center;
     }
 
-    .navbar-menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .nav-item {
+        width: 100%;
     }
 
-    .navbar-icons {
-        margin-top: 10px;
-    }
 }
 
 /* Container for the hero section */
@@ -90,9 +89,9 @@ body {
 /* Left content */
 .hero-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
-    color: #002F6C;
+    color: #294fe9;
     margin-bottom: 20px;
 }
 
@@ -122,6 +121,9 @@ body {
     background: linear-gradient(135deg, #005fcc, #003a99);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
+}
+.hero-content span {
+    color: #4fdab1;
 }
 
 /* Center image */
@@ -586,7 +588,7 @@ body {
 }
 
 .modal-logo {
-    width: 40px;
+    width: 50px;
     height: 40px;
 }
 

@@ -40,32 +40,90 @@ body {
     /* Apply custom scrollbar for IE */
 }
 
-/* Capsule shape and custom styling for the navbar */
+/* Enhanced Glassmorphic Navbar Styling */
 .navbar {
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 10px 20px;
     margin: 20px 100px;
 }
 
-/* Logo styling */
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #000;
+/* Navbar Responsiveness */
+@media (max-width: 992px) {
+    .navbar {
+        margin: 10px 20px;
+        border-radius: 20px;
+    }
 }
 
+/* Logo Styling */
 .navbar-brand img {
-    height: 30px;
+    height: 35px;
 }
 
-/* Centered nav links styling */
+/* Centered Nav Links Styling */
 .nav-link {
-    color: #6c757d;
-    transition: color 0.3s ease;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-item .active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+/* Get in Touch Button Styling */
+.btn-signin {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-signin:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Toggler Button Styling */
+.navbar-toggler {
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Additional Hover Effects for Navbar Links */
+.nav-link {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        font-size: 1rem;
+    }
 }
 
 /* Right action buttons styling */
@@ -83,20 +141,13 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
-
 .btn-signin:hover {
     background-color: #e0d4ff;
+    text-decoration: none;
 }
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
-
-    /* Hide right side icons and Sign In button on medium and smaller screens */
-    .btn-signin,
-    .btn-icon {
-        display: none;
-    }
 
     /* Align nav links to center when collapsed */
     .navbar-nav {
@@ -105,6 +156,11 @@ body {
 
     .nav-item {
         width: 100%;
+    }
+
+    .navbar {
+        border-radius: 10px;
+        margin: 15px 15px;
     }
 
 }
@@ -607,84 +663,63 @@ body {
     }
 }
 
-/* Newsletter Modal Custom Styling */
-.newsletter-modal-content {
-    background-color: #ffffff;
-    border-radius: 8px;
+/* Modal Content Styling */
+.modal-content {
+    border-radius: 10px;
     padding: 30px;
-    max-width: 400px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.modal-body {
-    text-align: center;
-}
-
-.modal-logo {
-    width: 50px;
-    height: 40px;
-}
-
-.modal-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #333;
-}
-
-.modal-subtext {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.newsletter-input {
-    border: 1px solid #000;
-    padding: 10px;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 14px;
-    color: #333;
-    text-align: center;
-}
-
-.subscribe-btn {
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
+    max-width: 500px;
     border: none;
-    padding: 10px;
-    border-radius: 4px;
-    width: 100%;
-    transition: background-color 0.3s ease;
+    position: relative;
+    /* To position the custom close button */
 }
 
-.subscribe-btn:hover {
-    background-color: #333;
+.modal-body img {
+    width: 50px;
+    height: 50px;
 }
 
-.modal-footer-text {
-    font-size: 12px;
-    color: #666;
-    line-height: 1.5;
+.modal-body h5 {
+    font-size: 1.5rem;
+}
+
+.modal-body p {
+    font-size: 0.9rem;
+    color: #6c757d;
 }
 
 /* Custom Close Button Styling */
-.custom-close-btn {
-    background: transparent;
-    border: none;
-    color: #333;
-    font-size: 1.5rem;
+.custom-close-button {
     position: absolute;
     top: 15px;
     right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
     cursor: pointer;
 }
 
-.custom-close-btn:hover {
-    color: #000;
+.custom-close-button:hover {
+    color: #0072ff;
     transform: scale(1.1);
 }
+
+/* Input and Button Styling */
+.input-group .form-control {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-group .btn-primary {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 10px;
+}
+
+.input-group .form-control::placeholder {
+    color: #adb5bd;
+}
+
 
 /* Footer Styling */
 .footer {

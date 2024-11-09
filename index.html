@@ -15,10 +15,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm ">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand fw-bold" href="#"><img src="assets/logo.png" alt="logo"></a>
+
             <!-- Navbar Toggler for mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,7 @@
                 <!-- Centered nav links -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">About</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-secondary" href="#">Services</a>
@@ -48,7 +49,7 @@
 
                 <!-- Right side actions -->
                 <div class="d-flex align-items-center">
-                    <!-- Sign In button, hidden on smaller screens -->
+                    <!-- Get in Touch button -->
                     <a href="#" class="btn-signin ms-2 d-none d-lg-inline">Get in Touch</a>
                 </div>
             </div>
@@ -381,8 +382,8 @@
                     </p>
                     <ul class="contact-details list-unstyled mt-4">
                         <li><strong>Address:</strong> 123 Tech Street, City, Country</li>
-                        <li><strong>Email:</strong> contact@company.com</li>
-                        <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                        <li><strong>Email:</strong> contact@dodongconsultancyservices.com</li>
+                        <li><strong>Phone:</strong> +91-7077981777</li>
                     </ul>
                 </div>
 
@@ -427,41 +428,41 @@
                 </div>
             </div>
         </div>
-        <hr>
     </div>
 
-    <!-- Newsletter Subscription Modal -->
+    <!-- Modal HTML Structure -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content newsletter-modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
+            <div class="modal-content p-4">
+                <!-- Custom Close Button with Font Awesome -->
+                <button type="button" class="custom-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
                 <div class="modal-body text-center">
-                    <img src="assets/logo.png" alt="Logo" class="modal-logo" />
-                    <h5 class="modal-title mb-2">Welcome to DCS</h5>
-                    <p class="modal-subtext mb-3">
-                        Please enjoy 10% off your order when you join our email list.
+                    <!-- Icon or Image for Newsletter -->
+                    <img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" alt="Newsletter Icon"
+                        class="mb-3" style="width: 50px;">
+
+                    <!-- Heading -->
+                    <h5 class="modal-title fw-bold mb-2" id="newsletterModalLabel">Subscribe to our newsletter</h5>
+                    <p class="text-muted mb-4">Sign up for our newsletter and receive exclusive discounts and promotions
                     </p>
-                    <form class="d-flex flex-column align-items-center">
-                        <input type="email" class="form-control newsletter-input mb-3" placeholder="Enter your email"
-                            required>
-                        <button type="submit" class="btn subscribe-btn">I Love to Join</button>
+
+                    <!-- Subscription Form -->
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
                     </form>
-                    <p class="modal-footer-text mt-3">
-                        And remember, we offer free worldwide shipping on all orders.<br>
-                        Yours Sincerely,<br>
-                        Dodong Consultancy Services
-                    </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/+917077981777" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
         <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon" class="whatsapp-icon">
         <span class="whatsapp-text">Chat on WhatsApp</span>
     </a>

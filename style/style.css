@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* General reset */
 /* Scrollbar for WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
@@ -31,138 +33,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: #f0f7f7 !important;
     -ms-overflow-style: scrollbar;
     /* Apply custom scrollbar for IE */
 }
 
-/* Navbar Styling */
-.navbar {
-    background-color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 20px 100px;
-}
-
-/* Navbar Responsiveness */
-@media (max-width: 992px) {
-    .navbar {
-        margin: 10px 20px;
-        border-radius: 20px;
-    }
-}
-
-/* Logo Styling */
+/* Navbar styles */
 .navbar-brand img {
-    height: 35px;
+    max-height: 35px;
 }
 
-/* Centered Nav Links Styling */
-.nav-link {
-    color: #ffffff;
+.navbar-nav {
+    gap: 2rem;
+    /* Adds spacing between tabs */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    color: #000;
+    transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+.navbar-nav .nav-link:hover {
+    color: #007bff;
 }
 
-/* Active Link Styling */
-.navbar-nav .nav-item .active {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-}
-
-/* Get in Touch Button Styling */
-.btn-signin {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 16px;
-    font-weight: bold;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
-}
-
-.btn-signin:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-/* Toggler Button Styling */
-.navbar-toggler {
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    min-width: 300px;
+    /* Ensures wider dropdown menu */
     border: none;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.dropdown-item {
+    font-size: 0.9rem;
+    color: #000;
+    padding: 0.3rem 0;
 }
 
-/* Additional Hover Effects for Navbar Links */
-.nav-link {
-    margin-left: 20px;
+.dropdown-item:hover {
+    color: #007bff;
+    text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px;
-    }
-
-    .nav-link {
-        margin-left: 0;
-        font-size: 1rem;
-    }
-}
-
-/* Right action buttons styling */
-.btn-icon {
-    padding: 6px;
-    border-radius: 50%;
-}
-
-.btn-signin {
-    background-color: #ccd6ff;
-    color: #294fe9;
-    border-radius: 50px;
-    padding: 10px 25px;
+.dropdown-item strong {
+    font-size: 1rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
-.btn-signin:hover {
-    background-color: #e0d4ff;
+/* Button Styling */
+.get-in-touch-btn {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
     text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 991.98px) {
+.get-in-touch-btn:hover {
+    background-color: #ffffff;
+    color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-    /* Align nav links to center when collapsed */
+/* Adjustments for mobile */
+@media (max-width: 992px) {
     .navbar-nav {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .get-in-touch-btn {
+        display: block;
+        margin: 1rem auto;
         text-align: center;
     }
-
-    .nav-item {
-        width: 100%;
-    }
-
-    .navbar {
-        border-radius: 10px;
-        margin: 15px 15px;
-    }
-
 }
 
 /* Container for the hero section */

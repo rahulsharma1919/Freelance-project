@@ -95,9 +95,9 @@ body {
 
 /* Button Styling */
 .get-in-touch-btn {
-    background-color: #0056b3;
+    background-color: #313131;
     color: #ffffff;
-    border: 2px solid #0056b3;
+    border: 2px solid #313131;
     border-radius: 5px;
     padding: 0.4rem 1rem;
     font-size: 1rem;
@@ -108,8 +108,8 @@ body {
 
 .get-in-touch-btn:hover {
     background-color: #ffffff;
-    color: #0056b3;
-    border-color: #0056b3;
+    color: #181818;
+    border-color: #181818;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -152,7 +152,7 @@ body {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background: linear-gradient(135deg, #0072ff, #005fcc);
+    background: linear-gradient(135deg, #383838, #181818);
     color: #fff !important;
     border-radius: 50px;
     text-decoration: none;
@@ -166,7 +166,7 @@ body {
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #005fcc, #003a99);
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
 }
@@ -604,9 +604,9 @@ body {
 
 /* Submit Button Styling */
 .submit-btn {
-    background-color: #0072ff;
+    background-color: #313131;
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     border: none;
     padding: 12px;
     border-radius: 8px;
@@ -614,7 +614,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #005fcc;
+    background-color: #181818;
     transform: translateY(-3px);
 }
 

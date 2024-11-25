@@ -139,13 +139,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 44px;
     font-weight: 700;
-    color: #294fe9;
+    color: #000;
     margin-bottom: 20px;
 }
 
 .hero-content p {
     font-size: 18px;
-    color: #2F4F4F;
+    color: #646464;
     margin-bottom: 30px;
 }
 
@@ -172,7 +172,7 @@ body {
 }
 
 .hero-content span {
-    color: #4fdab1;
+    color: #b8b8b8;
 }
 
 /* Center image */
@@ -191,11 +191,11 @@ body {
 }
 
 /* Right side news section */
-.latest-news h3 {
+/* .latest-news h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: 400;
-    color: #002F6C;
+    color: #000;
     margin-bottom: 20px;
 }
 
@@ -242,13 +242,12 @@ body {
 
 .pagination a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Section Title */
 .section-title {
     font-size: 24px;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
+    color: #000;
     margin-bottom: 20px;
 }
 
@@ -273,7 +272,7 @@ body {
 
 .card-title {
     font-size: 14px;
-    color: #002F6C;
+    color: #000;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 8px;
@@ -281,7 +280,7 @@ body {
 
 .card-text {
     font-size: 14px;
-    color: #2F4F4F;
+    color: #646464;
     margin-bottom: 15px;
 }
 
@@ -307,7 +306,7 @@ body {
 /* Main title styling */
 .main-title {
     font-size: 32px;
-    color: #002F6C;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 40px;
@@ -316,7 +315,7 @@ body {
 /* Subtitle for each section */
 .section-subtitle {
     font-size: 20px;
-    color: #0072ff;
+    color: #363636;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     margin-bottom: 15px;
@@ -325,7 +324,7 @@ body {
 /* Section description */
 .section-description {
     font-size: 16px;
-    color: #2F4F4F;
+    color: #646464;
     margin-bottom: 20px;
 }
 
@@ -353,7 +352,7 @@ body {
 /* Success Stories */
 .success {
     font-size: 32px;
-    color: #002F6C;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
@@ -362,7 +361,7 @@ body {
 /* Main Description */
 .success-description {
     font-size: 16px;
-    color: #2F4F4F;
+    color: #646464;
     margin-bottom: 40px;
     max-width: 700px;
 }
@@ -398,7 +397,7 @@ body {
 
 .card-title {
     font-size: 20px;
-    color: #002F6C;
+    color: #000;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -418,7 +417,7 @@ body {
 /* Choose Us Section */
 .choose-us {
     font-size: 32px;
-    color: #002F6C;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
@@ -426,12 +425,12 @@ body {
 
 .choose-us-description {
     font-size: 16px;
-    color: #2F4F4F;
+    color: #646464;
     margin-bottom: 40px;
 }
 
 .choose-us-description a {
-    color: #0072ff;
+    color: #181818;
     text-decoration: none;
 }
 
@@ -564,7 +563,7 @@ body {
 .contact-info-title {
     font-size: 28px;
     font-weight: bold;
-    color: #002F6C;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
